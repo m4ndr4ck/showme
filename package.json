@@ -7,7 +7,11 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "home:build": "ng build home --prod",
+    "home:client": "ng serve home -o --port 3000",
+    "profile:build": "ng build profile --prod",
+    "profile:client": "ng serve profile -o --port 3100"
   },
   "private": true,
   "dependencies": {
@@ -25,6 +29,7 @@
     "zone.js": "~0.8.26"
   },
   "devDependencies": {
+    "@angular-devkit/build-angular": "~0.13.0",
     "@angular/cli": "~7.3.8",
     "@angular/compiler-cli": "~7.2.0",
     "@angular/language-service": "~7.2.0",
